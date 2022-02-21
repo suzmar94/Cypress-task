@@ -1,8 +1,6 @@
-///<reference types="cypress"/>
+describe('SwagLab', () => {
 
-describe('Verify Browser Stack Home Page', () => {
-
-    it('Verify SwagLabs logo is visible', () => {
+    it('SwagLab checkout', () => {
 
         cy.openHomePage();
         cy.get('.bot_column').should('be.visible');
@@ -10,7 +8,6 @@ describe('Verify Browser Stack Home Page', () => {
         cy.get('[placeholder="Password"]').type('secret_sauce');
         cy.get('#login-button').click();
         cy.get('.product_sort_container').select(2);
-        // cy.get('product_sort_container').contains('Price (low to high)');
         cy.get('#add-to-cart-sauce-labs-onesie').click();
         cy.get('#add-to-cart-sauce-labs-fleece-jacket').click();
         cy.get('#shopping_cart_container').click();
