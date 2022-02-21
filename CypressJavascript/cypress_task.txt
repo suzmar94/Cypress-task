@@ -1,0 +1,6 @@
+1. Navigate to https://www.saucedemo.com/
+2. Use the information from the page to log in
+3. Sort the item list from low to high price
+4. Add to cart the least expensive and the most expensive item
+5. Open the cart and complete the checkout process
+6. Logout from the store
